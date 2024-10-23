@@ -1,0 +1,50 @@
+{
+  "name": "@khulnasoft/codemirror-khulnasoft",
+  "version": "1.1.1",
+  "description": "codemirror integration for khulnasoft",
+  "scripts": {
+    "dev": "vite",
+    "generate": "buf generate",
+    "tsc": "tsc --noEmit",
+    "test": "biome lint",
+    "test:watch": "vitest",
+    "pages": "vite build",
+    "build": "tsc --build",
+    "prepare": "npm run build"
+  },
+  "main": "./dist/plugin.js",
+  "types": "./dist/plugin.d.ts",
+  "keywords": [
+    "codemirror",
+    "typescript",
+    "ts"
+  ],
+  "author": "Val Town",
+  "license": "ISC",
+  "peerDependencies": {
+    "@codemirror/autocomplete": "^6",
+    "@codemirror/state": "^6",
+    "@codemirror/view": "^6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.1",
+    "@bufbuild/buf": "^1.36.0",
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/lang-python": "^6.1.5",
+    "codemirror": "^6",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.7"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^1.10.0",
+    "@connectrpc/connect": "^1.4.0",
+    "@connectrpc/connect-web": "^1.4.0"
+  }
+}
