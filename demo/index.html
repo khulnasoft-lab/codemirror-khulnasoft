@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codemirror-khulnasoft demo</title>
+    <link href="./demo.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <h1>
+        <a href="https://github.com/val-town/codemirror-khulnasoft"
+          >codemirror-khulnasoft</a
+        >
+      </h1>
+      <p>by <a href="https://www.khulnasoft.com/">khulnasoft.com</a></p>
+      <p>
+        ⚠️ Hella experimental, very unofficial. Type in the box and it'll give
+        you AI autocompletions powered by KhulnaSoft.
+      </p>
+
+      <h3>TypeScript AI autocompletion</h3>
+      <div id="editor"></div>
+
+      <h3>Python AI autocompletion</h3>
+      <div id="editor-python"></div>
+
+      <h3>TypeScript AI autocompletion (cmd+k to trigger completion)</h3>
+      <div id="editor-explicit"></div>
+    </main>
+    <script type="module" src="./index.ts"></script>
+  </body>
+</html>
